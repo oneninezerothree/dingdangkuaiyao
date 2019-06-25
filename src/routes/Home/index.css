@@ -1,0 +1,904 @@
+@charset "utf-8";.home,.o2oListBox {
+    padding-bottom: 1rem
+}
+
+.addrBox span,.tc .news,.top .one {
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.addrBox img,.addrBox span,.priceBox img,.priceBox p,.searchBox img,.searchBox input {
+    vertical-align: middle
+}
+
+.aboutLeft .sales,.down .addLine {
+    text-decoration: line-through
+}
+
+body,html {
+    width: 100%;
+    height: 100%;
+    background-color: #eee
+}
+
+.home,.header {
+    width: 7.5rem
+}
+
+.home {
+    height: 100%;
+    margin: 0 auto;
+    padding-top: .9rem
+}
+
+.header {
+    padding: 0 .2rem;
+    height: .9rem;
+    line-height: .9rem;
+    background: url(data:image/jpeg;base64,/9j/4QAYRXhpZgAASUkqAAgAAAAAAAAAAAAAAP/sABFEdWNreQABAAQAAABQAAD/4QOPaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49Iu+7vyIgaWQ9Ilc1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCI/PiA8eDp4bXBtZXRhIHhtbG5zOng9ImFkb2JlOm5zOm1ldGEvIiB4OnhtcHRrPSJBZG9iZSBYTVAgQ29yZSA1LjYtYzAxNCA3OS4xNTY3OTcsIDIwMTQvMDgvMjAtMDk6NTM6MDIgICAgICAgICI+IDxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+IDxyZGY6RGVzY3JpcHRpb24gcmRmOmFib3V0PSIiIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bXBNTTpPcmlnaW5hbERvY3VtZW50SUQ9InhtcC5kaWQ6ZGNjODc1OWMtZjI5MS00YjQxLTgwMjAtZDI5MTgzMjZjZTc2IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjEyOTJFRjE3NUJBMzExRTdCMzEwOURERjNCMjEzNzg4IiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjEyOTJFRjE2NUJBMzExRTdCMzEwOURERjNCMjEzNzg4IiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDQyAyMDE1IChNYWNpbnRvc2gpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6OTA1YjdjM2ItYTBjYS00NWNiLWFmYzItMzE4NWZhNmVhMTZhIiBzdFJlZjpkb2N1bWVudElEPSJhZG9iZTpkb2NpZDpwaG90b3Nob3A6ZmM4Y2NlNTUtOTkxYS0xMTdhLWEyN2YtZjEwZmY5OTcxYjM4Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+/+4ADkFkb2JlAGTAAAAAAf/bAIQAAgICAgICAgICAgMCAgIDBAMCAgMEBQQEBAQEBQYFBQUFBQUGBgcHCAcHBgkJCgoJCQwMDAwMDAwMDAwMDAwMDAEDAwMFBAUJBgYJDQsJCw0PDg4ODg8PDAwMDAwPDwwMDAwMDA8MDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwM/8AAEQgAWgLuAwERAAIRAQMRAf/EAIYAAQEAAwEBAQAAAAAAAAAAAAABAgMEBQYHAQEBAQEBAQEBAQAAAAAAAAAAAQIDBQYEBwgQAAIBAgIGCQMDBAMBAAAAAAABAhEDITFBUZHREhNhcYGhMlKSUwSxwSLhYnLw8UKigtKTBREBAQEAAgMBAQEAAAAAAAAAAAERAhIhMVFBA3H/2gAMAwEAAhEDEQA/APxo/m7/AGcASpfSy5dgbl1348py/wBQrQAAhVSUlbjKbx4VVLW9C2kWTXndtXpet6WadgAAAAAAAAAAAAAEqBAqAABAAAAAAAAAAY1KoBst3HB64vxR+66SGOxNSSlF1i8nv6SMhUAiPLrYrfD2xMugAIKlXeLcWTWSVN5i3XSSRQrIKAAAAAAAAAAAAAAAAAAAAoVVA57j/J9n0LBhQDIiAAAAAAALQCkQAtAuKAAEAiqACirmnTpCOG/8POfx4pPTYWCf8NX8ctVMjc5fTXn1r2YNaU1mmtBpQA2BiFAPqamHzyFUAZADcrtx574pU06Jm+kC5dYVy/IljG3q/KXW8u7EN8Z+uYrYAAAAAAAAIBQAgEqBAoAIAAAAAAAAACVKIFAAADOE5QdVk/FF5PrA64yjNcUcVk0809TIxZjIqJLQZrp/P9YmWwDJR17DN5fG5x+sjLalVQAAAAAAAAAAAAAAAAAAAAUqgADnmvzl1iCBAAAAAAAFSCKQAKFUgFEIKRcUCBVoEZEQCub5Hxo3qzT4L3uZp00TWnrzXTkanLB5M4ztycJx4JrFx6NDTWDT1o6e1jAKAAPqDL58AAAAA1K6cf6Z4vo6jTvEqkm5OkUqyfQsyq85ycnKUvFJ1fbo7Mg6oUAAAAAAAAAACVAgVABAAAAAAAAAAKgYlUAAAAAABlGUoPii6Pua1MDshOM02sGvFHSt6IxZiyzXUSunCeESrvM246TjrJKmRi3W5MUKoVQAAAAAAAAAAAAAAAAAAAUApVAAADnl4pdbCIAAAAAADKgQILQChQAQABFUABaAUiAAKAa7lqF6PBcVUsYyWDi3pi9H0eksuDx79i5Ya46ShJ0hdSom9TWNH0bKnSXVlaSqAfUGXz4AAAAABKuWPUWXGuPO8f8AHN8i5GMVb4oqU8ZJtV4V26X9Dc8v1/zs5eY4+OHuQ9S3mm9hx2/ch6lvIbPqcdv3IepDTZ9OZb9yO1A2fTmW/cjtBsOZb9yO0Gz6cy37kf67AbPpzLfuR79wNn05lv3F37hps+nNt+4u/cDZ9Tm2/cWx7imxOZb862PcNO0OZb862S3DV7ROba9zuluIdp9Oba879MtwTtE5trzP0y3A7Q51rzP0sHaHOta36WDtDnWtcvSF7ROdb1y9P6g7Q51v93p/UHaHPt/v9P6hO0Odb/f6f1B3ic63+/0/qF7xOdDVN9i3lO8OdDyz2LeDvDnQ8s9i3hO8TnQ8s/8AX/sF7w58PJP/AF3g7w58PJLbHeDvDnx8ktsd5E7z4c+Pty2oL3nxV8hJpxhNST/FpqtX2A7z49G3c5kVNxUZZSinVJr+qnLlz8u/8+PhsqjGui1Q7QWqLsUqtY2BVaxsFKAAAAAAAAAAAAAAAAClUAAAAFA5Xi31sIAAAACgUiAFoBQoAIBFAKAoBQKRAAFAAMUKjSkpRklKMlSUWqprU0B5Xyfhu0nctVnaWMoZzgteuUenNaa5nSctNcVVSuFKVrXCmuppX1Bl8+AO96gMZSjDxyUet47MwNb+RbWSlN9Cou/HuKY0v5E34Yxj/s++i7guNcpyn47j4c3V4JLN0wQI8Z3eK7O61SM8OHVFeHYvudc8Y68b1rcHcAAAAAAAAAAAEABAIAAAACAAoQAAAABKgQqgAAAAZ5Yt5Ig3xio9MtL1dCM2668eOOz4zxnB6aSXZg/sc+cdv533HYc3UCAAAAADAABQu0WrG0UbQqO1Co7BUvYB2AdgHaCl7QUdooO0AuwBoFACoDl0LpCAABVa1tQCsdMku1AXij5o7UETjh547UDF44eeO1EXF4oPKcX1NBcOKPmW0GHEtZEWq19zGLi7X2MYLjqex7iC0fll6XuBq0lohL0vcQXhm8rcvS9wDgue3P0vcBeC57Vz0S3DYmw4LntT9L3DYbFVu57U/SxsXwvLu+1PYTYbDl3fansGw2HKu+1IbDYcq9mrck1inl9xsNjmf/z63o3o2eFp8U7TinCT0SSrg646u3PXc2fW537aybm/2r7uht4WNT+RL/GEY9L/ACf2QMa5XLksJTdPKsF3UKvpqolkqBFAgHL8ufDbVteK9n/BZ7XRbTfCNRwG1bbbw4dXh6v0JXXhfxsDoAAAAAAAAAIE0CAAAAAgAKEAAAAASoEKoAAAAABJvBKreSIN8Y8PTJ5vV0Izbrrx44yI02WpcNyDeTdH1Sw+5OU2LxuWPSOL9AEAAAAAAAAAFCgUAAAAAABkkRFAoUAEACoI3Wbak+KSTgnSnma+y0jUtdfJsrKxaX/CO4dr9Z05Vr2bfojuJt+mnKt+1b/84f8AUu1F4ILBQguqEdxNq6qjFZRj6Y7hotF5VsW4CNgTiesIvFLW9owOKWt7RgcUvM9owOKXme0YJxS8z2jA4nre0YFXre0omOtgO0CV6QqYgKgAIAIADD9Sqw4lVVybot5rB4p1eMgAqAEAZui0geTcuc65K4vC8LdfKstufadpMjbEKY4NYNYpgb000mtOgjvLvlQoAAAAAEqE0ABAAAAAQKACAAAAAMalAKAAAAAAo3RJVbyQG+MVFa2839kYt114zGRGgC0wpr0gx6cJccYz8yTfXp7zjZj9EuzWRAAAAAAAAAoUCgFAAQAAAyoRFAoUAAAKkQbLcHclStIrxSX0XSwzbjtSSSSVEsEloQYbDIAAIAAjehFGJQAAAAAAAAAAI2FQoAAIQCAAKNbdeo1Jitbf5xWpNvtNfi/jyTo8XQIAQCNlVz/Jnw2uBeK9WP8Ax/yf27TXGeVkcBtoAAZQlwvHKWfQ9YrXDllbiOwAAAQAEAgAAAAAEChAAAAAEqBCqAAAAAAAJNtJKreSISa6Ix4Vrbzf2Rm3XXjMUjSgAoB2/GlWEo6YSr2Sx+qZz5+3ThfGOgw2AAAAAAAoUCgFAAAIBQLQiKBQoQCgBUiIyUXJqMaVevJdL6AO2MVGKislpebelsOdrIDYZACAUDFsoxKAAAAAAAAAABGwqFAgAQAQABRrbr1ajUmKhRz8X58Wivd/Y3njGs8PONPDQABKlUSbaSzeCA8y7cV27KadYL8bf8Vp7XidJMjcaygAAZgbYSqqPNZ9WsldeHLYzDYBAmgQAAAAEAoEJqgAAAAlQIVQAAAAAAAAk20li3kiEdEYqKwxb8Uvt1GbddZMUjSgUKgADf8AHdLlNE012rFfQxz9NcL5dxzdQAAAAAKFAoBQAEAAUCkRQKFCAUAKkRF1JKreCS0sDst21BaHJ+OS+i6EGLdbAgBsMiAUDBsohQAAAAAAAAAAI2FQoACCACAAeGZRrbr1ajUmKhRjJ0i32LtLPZHObbeeV4QBCqgGn5FzgtOmE7n4Q6Kr8n2L6l4zasjz1gdGgAAAAVOjTWaCy55bqp5Yp5MjtoACAAAAAAQKEAAAAASoEKoAAAAAAAASbdEqtkJNdEYqKosW85a/0MW67SYoVQKFQABSApOLUlnFqSXViM03HqYaMtHUcXcAAAAVQoAAAUCAAKBSIoFChAKAFSIi5AdVm3w/nJfk1gtSf3YZtbgyAAMzIoGDZRCgAAAAAAAAAASoVCgAIIAIAB4Fg1t1+yNSYqFADVdfhXb9jXFY0mmnBUrw2JRQGnW3kgPNvz5l2TTrC3+EOmjxfazpJkbjUUAAAAAAzg9GvIVvhfxmRtQAAABAoQAAAABKgQqgAAAAAAAACpNuiVWRZNb4xUVRYt5vWZt11kxSKoFCoAApBCgEehYlxWoftrF9mXdQ5cvbtw9NploABVCgAAAAAAKEUgoFChAKAFSIigbrNvianLwp/itbWnqX1DNrqDIAAAZmRi3UohQAAAAAAAAAAIwqFAAQQAQAFaKpcGtuu41PCoUAAHPN1k9i7Dc9NxiUeaaeGoAAtOeTyzyeXTqA8aHghlksuo7VusiAAAAAABgb3m+sjvfYEAAEChAAAAAEYEKoAAAAAAAAAAbbWU+tdf8AbUZ5OnD9bDLYBkRUKAFIBRiEAO34vhufyX0OfN0/n+ukw6AF0BQKAAAFCIFAMlkRADJkUQAoAVEFCJLKWeWgD0dCyyWWWSy6NRHMKAAABk8iDEoAAAAAAAAAAEYEKoQCiEoEAABhLRmb4qxKAACrNAcaOjYB/9k=) center center no-repeat;
+    background-size: 100%;
+    position: fixed;
+    left: 50%;
+    top: 0;
+    transform: translateX(-3.75rem);
+    -webkit-transform: translateX(-3.75rem);
+    z-index: 1
+}
+
+.contentBox,.searchBox {
+    position: relative
+}
+
+.contentBox {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden
+}
+
+.addrBox {
+    width: 3.2rem;
+    height: .9rem
+}
+
+.addrBox img {
+    height: .3rem;
+    margin-right: .1rem
+}
+
+.addrBox .down_arrow {
+    width: .2rem;
+    height: .12rem
+}
+
+.addrBox span {
+    width: 2.2rem;
+    height: .9rem;
+    line-height: .9rem;
+    overflow: hidden;
+    font-size: .24rem;
+    color: #FFF;
+    margin-left: .08rem
+}
+
+.searchBox input {
+    width: 3.82rem;
+    height: .54rem;
+    border-radius: .4rem;
+    font-size: .22rem;
+    padding-left: .6rem;
+    background-color: #ec7373;
+    border: none;
+    color: #FFF
+}
+
+.drugList,.flash_sale {
+    border-top: 1px solid #d4d4d4
+}
+
+.blank_space,.drugList,.priceBox {
+    border-bottom: 1px solid #d4d4d4
+}
+
+.searchBox input::-webkit-input-placeholder {
+    color: #FFF;
+    opacity: 1
+}
+
+.searchBox img {
+    width: .3rem;
+    height: .3rem;
+    position: absolute;
+    top: .32rem;
+    left: .2rem
+}
+
+.banner {
+    width: 100%;
+    position: relative;
+}
+
+.banner img {
+    display: block;
+    width:100%;
+}
+
+.bannerBox {
+    position: relative
+}
+
+.banner ul {
+    width: 100%;
+    height: .4rem;
+    line-height: .4rem;
+    overflow-y: auto;
+    /* background-color: rgba(0,0,0,.5); */
+    position: absolute;
+    bottom:0;
+    padding: 0 .4rem 0 .2rem;
+    font-size: 0;
+    color: #FFF
+}
+
+.adviceBox,.drugList,.priceBox {
+    background-color: #fff
+}
+
+.tc .newsBox {
+    width: 100%;
+    height: 100%;
+    overflow: hidden
+}
+
+.tc .news {
+    width: 100%;
+    font-size: .22rem;
+    overflow: hidden
+}
+
+.tc .closeBtn {
+    width: .16rem;
+    height: .16rem;
+    position: absolute;
+    top: .1rem;
+    right: .25rem
+}
+
+.tc .closeBtn img {
+    display: block;
+    width: 100%
+}
+
+.col_yel {
+    color: #ffb500
+}
+
+.priceBox {
+    width: 100%;
+    height: .87rem;
+    line-height: .87rem;
+    text-align: center;
+    padding: 0 .2rem;
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between
+}
+
+.categoryList ul li,.drugList .drugType,.footer>div,.priceBox p,.special_choose p {
+    display: inline-block
+}
+
+.priceBox img {
+    width: .26rem;
+    height: .26rem;
+    vertical-align:middle;
+}
+
+.priceBox p {
+    font-size: .22rem;
+    color: #e94544;
+    margin:0;
+}
+
+.advert img,.adviceBox img,.flash_sale img {
+    vertical-align: top
+}
+
+.adviceBox {
+    width: 100%;
+    font-size: 0
+}
+
+.adviceBox .icon2 {
+    margin: 0 .35rem
+}
+
+.icon3 {
+    margin-right: .35rem
+}
+
+.w20 {
+    width: 20%
+}
+
+.w25 {
+    width: 25%
+}
+
+.advert,.advert img {
+    width: 100%
+}
+
+.flash_sale {
+    width: 100%;
+    font-size: 0
+}
+
+.flash_sale img {
+    width: 50%
+}
+
+.flash_sale .left {
+    border-right: 1px solid #d4d4d4
+}
+
+.drugList {
+    width: 100%
+}
+
+.drugList .drugType {
+    width: 25%;
+    text-align: center;
+    margin: .3rem 0
+}
+
+.drugList .drugType img {
+    height: .63rem
+}
+
+.drugList .drugType p {
+    font-size: .24rem;
+    margin: 4px 0
+}
+
+.blank_space {
+    width: 100%;
+    height: .19rem;
+    background-color: #f5f5f5
+}
+
+.special_choose {
+    width: 100%;
+    height: .89rem;
+    line-height: .89rem;
+    text-align: center;
+    background-color: #fff
+}
+
+.special_choose_hide {
+    height: .89rem
+}
+
+.special_choose img {
+    width: .29rem;
+    height: .29rem;
+    vertical-align: middle
+}
+
+.special_choose p {
+    font-size: .3rem;
+    margin-left: .2rem;
+    color: #e94544
+}
+
+.special {
+    width: 100%;
+    background-color: #FFF
+}
+
+.special_drug {
+    width: 100%;
+    min-height: 3.37rem;
+    position: relative;
+    background-color: #FFF
+}
+
+.infoVos_fixed {
+    position: fixed;
+    left: 0;
+    top: .9rem;
+    z-index: 1
+}
+
+.special_drug>img {
+    width: 100%;
+    display: block;
+    margin-bottom: .1rem
+}
+
+.special_drug .top {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding-right: .2rem
+}
+
+.special_drug .yellowIcon {
+    width: .6rem;
+    position: absolute;
+    top: .3rem;
+    left: .3rem
+}
+
+.special_drug .cartBox {
+    width: .9rem;
+    height: .9rem;
+    line-height: .9rem;
+    text-align: center
+}
+
+#showcart {
+    width: .62rem;
+    height: .62rem;
+    position: absolute;
+    top: 2.5rem;
+    right: .18rem
+}
+
+.top {
+    width: 3.7rem;
+    position: relative;
+    padding: .5rem 0
+}
+
+.top .one {
+    font-size: .24rem;
+    color: #000;
+    font-weight: 700;
+    width: 100%;
+    margin-bottom: 3px;
+    overflow: hidden;
+    height: .34rem
+}
+
+.top .specification,.top .two {
+    font-size: .24rem;
+    width: 100%;
+    margin-bottom: 3px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    height: .32rem
+}
+
+.top .two {
+    color: #686969
+}
+
+.top .three {
+    color: #de5d61;
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size:12px;
+}
+
+.top .specification {
+    color: #686969
+}
+
+.down {
+    margin-top: .5rem;
+    /* font-size:12px; */
+}
+
+.down .spec {
+    font-size: .4rem;
+    color: #e94444
+}
+
+.down .spec1 {
+    font-size: .26rem;
+    color: #686969;
+    height: .4rem
+}
+
+.rectangle {
+    width: 1.75rem;
+    height: .45rem;
+    line-height: .45rem;
+    border-radius: 0 .4rem .4rem 0;
+    background-color: #e94443;
+    position: absolute;
+    top: 0;
+    left: -3.8rem;
+    text-align: center;
+    color: #fff;
+    font-size: .28rem
+}
+
+.categoryList,.drugItems,.second_kill {
+    background-color: #fff
+}
+
+.categoryList .ulDad_fixed,.footer {
+    left: 50%;
+    transform: translateX(-3.75rem)
+}
+
+.btc_advert {
+    margin-bottom: .3rem
+}
+
+.second_kill {
+    width: 100%;
+    line-height: .67rem;
+    position: relative
+}
+
+.second_kill .timer img {
+    width: 100%;
+    vertical-align: middle
+}
+
+.second_kill .timer span {
+    font-size: .34rem;
+    color: #ea5859;
+    vertical-align: middle
+}
+
+.second_kill .timer .countdown {
+    float: right;
+    font-size: .23rem;
+    color: #9e9e9e;
+    position: absolute;
+    top: .13rem;
+    right: .1rem
+}
+
+.second_kill .timer .countdown span {
+    width: .38rem;
+    height: .29rem;
+    line-height: .29rem;
+    border: 1px solid #9e9e9e;
+    text-align: center;
+    color: #9e9e9e;
+    font-size: .2rem;
+    margin: 0 .02rem;
+    vertical-align: text-top
+}
+
+.drugItems,.yw_items {
+    width: 100%
+}
+
+.categoryList,.drugItems,.yw_items {
+    margin-bottom: .2rem
+}
+
+.drugItems {
+    padding: 0 .09rem .1rem;
+    font-size: 0
+}
+
+.yw_items .one {
+    width: 3.73rem;
+    height: 3.28rem
+}
+
+.yw_items .two {
+    width: 3.72rem;
+    height: 1.53rem
+}
+
+.yw_items .three {
+    width: 3.72rem;
+    height: 1.7rem;
+    margin-top: .05rem
+}
+
+.brandSaleList {
+    font-size: 0
+}
+
+.w50 {
+    width: 50%
+}
+
+.categoryList {
+    width: 100%
+}
+
+.categoryList .ulDad {
+    width: 100%;
+    overflow-x: auto;
+    line-height: .85rem;
+    height: .85rem;
+    overflow-y: hidden;
+    border-bottom: 1px solid #eee
+}
+
+.ulDad_hide {
+    height: .85rem
+}
+
+.categoryList .ulDad_fixed {
+    width: 7.5rem;
+    position: fixed;
+    -webkit-transform: translateX(-3.75rem);
+    top: .9rem;
+    z-index: 1;
+    background-color: #FFF
+}
+
+.categoryList ul {
+    overflow: hidden
+}
+
+.categoryList ul li {
+    float: left;
+    padding-left: .5rem
+}
+
+.categoryList .imgList {
+    width: 100%;
+    font-size: 0;
+    background: #EFEFF4
+}
+
+.categoryList .imgList img {
+    width: 100%;
+    height: 3.37rem
+}
+
+.fc {
+    height: 2rem;
+    position: fixed;
+    right: .2rem;
+    bottom: 1.2rem
+}
+
+.fc .logo {
+    width: 1.62rem;
+    height: 2rem;
+    padding: .1rem;
+    background-color: #e94544;
+    border-radius: .2rem;
+    text-align: center;
+    position: relative;
+    margin-right: .1rem
+}
+
+.fc .logo .logoBox {
+    width: 100%;
+    background-color: #fff;
+    padding: .1rem .2rem;
+    border-radius: .15rem .15rem 0 0;
+    font-size: 0;
+    margin-bottom: .05rem
+}
+
+.fc .logo .logoBox img {
+    width: 100%;
+    vertical-align: top
+}
+
+.fc .logo .text {
+    color: #fff;
+    line-height: .3rem;
+    font-size: .2rem
+}
+
+.fc .logo .logo_closeBtn {
+    position: absolute;
+    top: -.5rem;
+    right: 0;
+    width: .3rem;
+    height: .3rem
+}
+
+.fc .erweima {
+    width: 1.4rem;
+    height: 2rem;
+    padding: .1rem;
+    background-color: #e94544;
+    border-radius: .2rem;
+    text-align: center;
+    position: relative
+}
+
+.fc .erweima .ewmBox {
+    width: 100%;
+    background-color: #fff;
+    padding: .1rem;
+    border-radius: .15rem .15rem 0 0;
+    font-size: 0;
+    margin-bottom: .05rem
+}
+
+.fc .ewmBox img {
+    width: 100%;
+    vertical-align: top
+}
+
+.fc .erweima .text {
+    color: #fff;
+    line-height: .3rem;
+    font-size: .2rem
+}
+
+.fc .erweima .closeBtn {
+    position: absolute;
+    top: -.5rem;
+    right: .07rem;
+    width: .3rem;
+    height: .3rem
+}
+
+.footer {
+    width: 7.5rem;
+    position: fixed;
+    bottom: 0;
+    -webkit-transform: translateX(-3.75rem);
+    background-color: #fff;
+    border-top: 1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9
+}
+
+.footer>div {
+    width: 25%;
+    float: left;
+    text-align: center;
+    position: relative
+}
+
+.footer img {
+    height: 1rem;
+    vertical-align: top
+}
+
+.footBtn_w5>div {
+    width: 20%
+}
+
+.footBtn_w4>div {
+    width: 25%
+}
+
+.footBtn_w3>div {
+    width: 33.3%
+}
+
+.ulList li span.active {
+    color: #e94544;
+    border-bottom: 4px solid #e94544
+}
+
+.cartNum {
+    width: .36rem;
+    height: .36rem;
+    line-height: .36rem;
+    background-color: #C33;
+    border-radius: 50%;
+    color: #FFF;
+    position: absolute;
+    left: 60%;
+    top: .01rem;
+    font-size: .2rem
+}
+
+.mask,.tusi-box {
+    background: rgba(0,0,0,.5)
+}
+
+.showadvertisement {
+    width: 7.5rem;
+    height: 100%;
+    position: fixed;
+    left: 50%;
+    top: 0;
+    transform: translateX(-3.75rem);
+    -webkit-transform: translateX(-3.75rem);
+    background-color: rgba(0,0,0,.5)
+}
+
+.showadvertisement .advertisementBox {
+    width: 6rem;
+    position: relative;
+    left: .75rem;
+    top: 50%;
+    transform: translateY(-4rem);
+    -webkit-transform: translateY(-4rem);
+    text-align: center
+}
+
+.showadvertisement .advertisement1 {
+    width: 100%;
+    display: block;
+    margin-bottom: .3rem
+}
+
+.showadvertisement .advertisement2 {
+    width: .45rem;
+    position: relative;
+    z-index: 1
+}
+
+.close,.img_box,.mask {
+    position: absolute
+}
+
+.mask {
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    top: 0
+}
+
+.img_box {
+    height: 9rem;
+    width: 7rem;
+    top: 1rem;
+    left: 50%;
+    margin-left: -3.5rem
+}
+
+.img_box .imgScr {
+    width: 100%;
+    height: 1006
+}
+
+.close {
+    display: flex;
+    width: 1.2rem;
+    height: 1.2rem;
+    bottom: -8%;
+    left: 40%;
+    align-items: center;
+    justify-content: center
+}
+
+.mask {
+    display: none
+}
+
+.tusi,.tusi1 {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 5
+}
+
+.tusi-box {
+    width: 85%;
+    height: 28px;
+    margin: 50% auto 0;
+    border-radius: 6px
+}
+
+.tusi-title {
+    width: 100%;
+    text-align: center;
+    color: #FFFBEE;
+    font-size: 12px;
+    height: 28px;
+    line-height: 28px;
+    letter-spacing: 4px
+}
+
+.tusi1 .tusi-title1 {
+    width: 2.8rem;
+    height: .94rem;
+    line-height: .94rem;
+    text-align: center;
+    color: #fff;
+    font-size: .3rem;
+    border-radius: 4px;
+    background: rgba(0,0,0,.6);
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin-left: -1.4rem
+}
+
+.imgListBox {
+    width: 100%;
+    height: 3.08rem;
+    background: #fff;
+    padding: .3rem;
+    margin-bottom: .2rem
+}
+
+.imgPreBox {
+    margin-right: .3rem;
+    width: 3.36rem;
+    height: 2.48rem
+}
+
+.imgListBox .imgPreBox img {
+    width: 100%;
+    height: 100%
+}
+
+.infoBox .name,.zhuzhi_info {
+    width: 3.24rem;
+    font-size: .24rem;
+    margin-bottom: .1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-height: .32rem
+}
+
+.infoBox .name {
+    color: #333;
+    font-weight: 500
+}
+
+.infoBox .name .sign {
+    padding: 0 .1rem;
+    text-align: center;
+    line-height: .32rem;
+    color: #FFF;
+    background-color: #F5A623;
+    vertical-align: middle;
+    border-radius: .04rem
+}
+
+.zhuzhi_info {
+    color: #888
+}
+
+.promotion {
+    height: .34rem;
+    padding: 0 .1rem;
+    color: #e94544;
+    border: 1px solid #e94544;
+    font-size: .2rem;
+    line-height: .3rem;
+    margin-right: .1rem;
+    margin-top: .04rem;
+    border-radius: 2px
+}
+
+.aboutLeft .setmeal {
+    font-size: .32rem;
+    line-height: .5rem;
+    height: .44rem;
+    color: #e94544;
+    margin-right: .2rem
+}
+
+.aboutLeft .sales {
+    color: #888;
+    font-size: .2rem;
+    line-height: .5rem;
+    height: .44rem
+}
+
+.addCarBox {
+    width: .6rem;
+    height: .6rem
+}
+
+.infoBox {
+    position: relative;
+    height: 2.48rem
+}
+
+.infoBox .goods_buyBox {
+    position: absolute;
+    bottom: 0;
+    width: 100%
+}
+
+.infoBox .goods_buyBox .addCarImg {
+    width: .48rem;
+    height: .48rem
+}
