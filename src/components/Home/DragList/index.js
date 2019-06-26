@@ -1,6 +1,8 @@
 import React from 'react'
 import styles from '../../../routes/Home/index.css'
 
+import { Link } from 'dva/router';
+
 
 class DragList extends React.Component{
     state={
@@ -29,10 +31,10 @@ class DragList extends React.Component{
             <div className={styles.drugList}>
                 {
                     this.state.yao.map((item,idx)=>{
-                        return <div className={styles.drugType} >
-                                    <img src={`${item.imgurl}`} key={idx}/>
+                        return <Link className={styles.drugType} to="/list" style={{color:"#000"}} key={idx}>
+                                    <img src={`${item.imgurl}`} key={idx} alt=""/>
                                     <p>{item.font}</p>
-                                </div>
+                                </Link>
                     })
                 }
             </div>

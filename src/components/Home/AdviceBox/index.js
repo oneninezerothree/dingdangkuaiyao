@@ -19,7 +19,7 @@ class AdviceBox extends React.Component{
         return(
             <div className={styles.adviceBox}>
                 {this.state.imgurl.map((item,idx)=>{
-                    return <img src={`${item}`} className={styles.w25} key={idx}/>
+                    return <img src={`${item}`} className={styles.w25} key={idx} alt=""/>
                 })}
                 
             </div>

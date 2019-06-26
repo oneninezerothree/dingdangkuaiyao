@@ -3,7 +3,7 @@ import React from 'react'
 
 import styles from '../../../routes/Home/index.css';
 
-import base from '../../../index.css'
+// import base from '../../../index.css'
 
 class PriceBox extends React.Component{
     state={
@@ -17,7 +17,7 @@ class PriceBox extends React.Component{
                 {
                     this.state.xinxi.map((item,idx)=>{
                         return <div key={idx}>
-                                    <img src="https://img.ddky.com/c/wap/images/ddky2/true_icon.png" />
+                                    <img src="https://img.ddky.com/c/wap/images/ddky2/true_icon.png" alt=""/>
                                     <p>{item}</p>
                                 </div>
                     })
