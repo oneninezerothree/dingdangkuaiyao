@@ -3,10 +3,15 @@ import React from 'react'
 import { Carousel } from 'antd';
 
 import styles from '../../../routes/Detail/index.css'
-
-import base from '../../../index.css'
+import axios from 'axios'
 
 class Slider extends React.Component{
+    renderSlider(){
+
+    }
+    componentDidMount(){
+        console.log(this)
+    }
     render(){
         return(
             <div id={styles.slider}>

@@ -6,9 +6,12 @@ import styles from '../../../routes/Detail/index.css'
 import base from '../../../index.css'
 
 class Xinxi extends React.Component{
+    componentWillMount(){
+        console.log(this)
+    }
     render(){
         return(
-            <div classNameName={styles.xinxi}>
+            <div className={styles.xinxi}>
                 <p className={styles.peisong_info}>
                     <img src="http://img.ddsy.com/c/mobile/images/spicon/logo_20171130.png" alt="" />
                     <span>[快药]急送,满￥28免运费,可预约</span>
