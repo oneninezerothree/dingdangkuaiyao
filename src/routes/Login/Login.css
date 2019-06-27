@@ -1,0 +1,245 @@
+* {
+    box-sizing: border-box;
+    padding: 0;margin: 0;
+}
+body,
+html {
+    background-color: #eee;
+    font-size: 50px;
+}
+
+.headercon {
+    width: 100%;
+    height: auto;
+    background: #ffffff;
+    /* margin-top: 10px; */
+    padding-bottom: 15px;
+    border-bottom: 1px solid #d8d8d8;
+    margin-bottom: 40px;
+}
+.loginheader {
+    width: 90%;
+    margin: 0 auto;
+    background: #fff;
+    line-height: 45px;
+    border-bottom: 1px solid #d8d8d8;
+}
+.loginheader a {
+      background: #ffffff;
+      float: left;
+      width: 50%;
+      font-size: 18px;
+      color: #4a4a4a;
+      text-align: center;
+  }
+.loginheader .active {
+      color: #cc3333;
+      border-bottom: 2px solid #CC3333;
+  }
+  .cl:after, .cl {
+      content: "\20";
+      display: block;
+      clear: both;
+  }
+  /* 快速登录 */
+  .loginbox {
+      display: none;
+      position: relative;
+  }
+  .mb15 {
+      margin-bottom: 14.5px;
+  }
+  ul, ol, dl {
+      list-style-type: none;
+  }
+  .loginbox li {
+      width: 90%;
+      margin: 15px auto 0;
+      font-size: 16px;
+      line-height: 34.5px;
+      border: 1px solid #d8d8d8;
+      position: relative;
+      background: #fafafa;
+      border-radius: 5px;
+  }
+  .loginbox .clli {
+      border: none;
+      background: #ffffff;
+  }
+  .loginbox li input {
+      font-size: 12px;
+      line-height: 18px;
+      padding: 8px 20px;
+      border: none;
+      width: 80%;
+      display: inline-block;
+      background: #fafafa;
+      width: -webkit-calc(100% - 100px);
+      width: -moz-calc(100% - 100px);
+  }
+  /* .pic-check {
+      width: 95px;
+      height: 37px;
+      margin-left: 5px;
+  } */
+  /* 随机验证码 */
+  #yzm{
+      display: inline-block;
+      width: 67px;
+      height: 37px;
+      border: 1px solid salmon;
+      border-radius: 5px;
+      text-align: center;
+  }
+  
+  .fl {
+      float: left!important;
+  }
+  .loginbox li .cleartel {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      float: right;
+      margin-right: 10px;
+  }
+  .loginbox li .cleartel img {
+      display: inline-block;
+      width: 100%;
+      position: relative;
+      top: 4px;
+  }
+  .loginbox li .smsCode {
+      display: inline-block;
+      width: 65%;
+      border: 1px solid #d8d8d8;
+      background: #fafafa;
+      border-radius: 5px;
+  }
+  .codebtn {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      margin-top: -17.5px;
+      font-size: 13px;
+      width: 87px;
+      height: 35.5px;
+      border-radius: 5px;
+      line-height: 38px;
+      color: #ffffff;
+      text-align: center;
+      background: #F08800;
+  }
+  .voiceYanzheng {
+      font-size: 12px;
+      text-align: center;
+      padding-right: 10px;
+      margin-bottom: 10px;
+      color: #9b9b9b;
+  }
+  .agreement {
+      color: #8E8E93;
+      font-size: 10px;
+      margin-bottom: 10px;
+      line-height: 18px;
+      padding: 12px;
+  }
+  .loginbtnbox {
+      padding: 0 22px;
+      text-align: center;
+      font-size: 18px;
+  }
+  .voiceYanzheng a {
+      color: #cc3333;
+  }
+  .agreement {
+      color: #8E8E93;
+      font-size: 10px;
+      margin-bottom: 10px;
+      line-height: 18px;
+      padding: 12px;
+  }
+.agreement img {
+      width: 12px;
+      position: relative;
+      top: 2px;
+      margin-right: 4px;
+  }
+  .none {
+      display: none;
+  }
+  .agreement a {
+      color: #D24C43;
+      font-size: 10px;
+      text-decoration: underline;
+      display: inline;
+  }
+  .loginbtnbox {
+      padding: 0 22px;
+      text-align: center;
+      font-size: 18px;
+  }
+  .loginbtnbox {
+      padding: 0 22px;
+      text-align: center;
+      font-size: 18px;
+  }
+  .loginbtnbox .btnlogin {
+      display: block;
+      width: 90%;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      border-radius: 20px;
+      color: #FFFFFF;
+      left: 5%;
+      bottom: -90px;
+      position: absolute;
+  }
+
+  /* 密码登录 */
+  .mb15 {
+      margin-bottom: 14.5px;
+  }
+  .loginbox li.last {
+      background: #f5f5f5;
+      border: none;
+      padding: 0 22px;
+      margin-top: 10px;
+  }
+  .loginbox li.last a {
+      color: #999999;
+      font-size: 12px;
+      line-height: 20px;
+  }
+  .loginbox li.last a:first-child {
+      text-decoration: underline;
+  }
+  .loginbtnbox .loginbtn {
+      display: block;
+      width: 90%;
+      height: 40px;
+      background: #cc3333;
+      line-height: 40px;
+      text-align: center;
+      border-radius: 20px;
+      color: #FFFFFF;
+      left: 5%;
+      bottom: -90px;
+      position: absolute;
+  }
+  .loginbtnbox .goreg {
+      position: absolute;
+      text-align: center;
+      width: 90%;
+      left: 5%;
+      bottom: -120px;
+      font-size: 14px;
+  }
+  .loginbtnbox .goreg a {
+      color: #cc3333;
+  }
+  a {
+      text-decoration: none;
+      background: transparent;
+      color: #333;
+  }

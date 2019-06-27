@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    font-size: 50px;
+}
+.regcontent {
+    background: #ffffff;
+    margin-top: 10px;
+    padding-top: 1px;
+    padding-bottom: 20px;
+}
+.cl,
+.cl:after {
+    content: "\20";
+    display: block;
+    clear: both;
+}
+.mb-25 {
+    margin-bottom: 25px;
+}
+.regcontent li {
+    list-style: none;
+    width: 90%;
+    margin: 10px auto 0;
+    font-size: 16px;
+    line-height: 36.5px;
+    border: 1px solid #d8d8d8;
+    position: relative;
+    background: #fafafa;
+    border-radius: 5px;
+    /* overflow: auto; */
+    height: 39px;
+}
+.regcontent li input {
+    font-size: 14px;
+    line-height: 21px;
+    padding: 8px;
+    border: none;
+    width: 80%;
+    background: #fafafa;
+    display: inline-block;
+    width: -webkit-calc(100% - 100px);
+    width: -moz-calc(100% - 100px);
+}
+/* .pic-check {
+    position: absolute;
+    right: 0;
+    width: 95px;
+    height: 37px;
+    margin-left: 5px;
+} */
+  /* 随机验证码 */
+#yzm{
+    display: inline-block;
+    width: 67px;
+    height: 37px;
+    border: 1px solid salmon;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 14px;
+}
+.fl {
+    float: left!important;
+}
+.regcontent li .cleartel {
+    position: relative;
+    top: 5px;
+}
+
+.regcontent li .cleartel {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    float: right;
+    margin-right: 10px;
+}
+.regcontent li .cleartel img {
+    display: inline-block;
+    width: 100%;
+}
+.reg-content .clli {
+      border: none;
+      background: #ffffff;
+  }
+  .regcontent li .smsCode {
+      display: inline-block;
+      width: 65%;
+      border: 1px solid #d8d8d8;
+      border-radius: 5px;
+  }
+  .regcontent li .codebtn {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      margin-top: -19.5px;
+      font-size: 13px;
+      width: 87px;
+      height: 39px;
+      border-radius: 5px;
+      color: #fafafa;
+      text-align: center;
+      background: #F08800;
+      line-height: 40.5px;
+  }
+  .voiceYanzheng {
+      font-size: 12px;
+      text-align: center;
+      padding-right: 10px;
+      color: #9b9b9b;
+      margin-top: 10px;
+  }
+  .voiceYanzheng a {
+      color: #cc3333;
+  }
+
+  /* 底部 */
+  .regbtnbox {
+      text-align: center;
+      /* margin-top: 40px; */
+  }
+  .foot .regbtnbox .agree {
+      position: relative;
+  }
+  .foot .regbtnbox .agree .useryes {
+      /* display: none; */
+      width: 18px;
+      height: 18px;
+      background: url(http://img.ddsy.com/c/wap/images/wap/useryes.png) no-repeat;
+      background-size: cover;
+      position: absolute;
+      top: 59%;
+      left: 33%;
+  }
+  .usernot {
+      display: none;
+      width: 18px;
+      height: 18px;
+      background: url(http://img.ddsy.com/c/wap/images/wap/usernot.png) no-repeat;
+      background-size: cover;
+      position: absolute;
+      top: 59%;
+      left: 33%;
+  }
+  .regbtnbox .regbtn {
+      display: inline-block;
+      width: 90%;
+      line-height: 40px;
+      background: #cc3333;
+      color: #fff;
+      font-size: 16px;
+      border-radius: 20px;
+      margin-top: 30px;
+  }
+  .userpro{
+      font-size: 12px;
+      display: inline-block;
+  }
+  i, span, time, a {
+      display: inline-block;
+  }
