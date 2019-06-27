@@ -1,0 +1,25 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <a href="#" aria-disabled="true" style="pointer-events:none">点击我</a>
+    <script>
+        var str = '<div class="drugList"><div class="drugType"><img src="https://img.ddky.com/c/cms/temp/20190425/1556162658298_78_78.jpg"><p>感冒发烧</p></div><div class="drugType"><img src="https://img.ddky.com/c/cms/temp/20190425/1556162353847_78_78.jpg"><p>清热解毒</p></div><div class="drugType"><img src="https://img.ddky.com/c/cms/temp/20190425/1556162136151_78_78.jpg"><p>咳嗽用药</p></div><div class="drugType"><img src="https://img.ddky.com/c/cms/temp/20190425/1556162300107_78_78.jpg"><p>皮肤用药</p></div><div class="drugType"><img src="https://img.ddky.com/c/cms/temp/20190425/1556162343354_78_78.jpg"><p>肠胃用药</p></div><div class="drugType"><img src="https://img.ddky.com/c/cms/temp/20190425/1556162241299_78_78.jpg"><p>性福生活</p></div><div class="drugType"><img src="https://img.ddky.com/c/cms/temp/20190425/1556162313064_78_78.jpg"><p>男科用药</p></div><div class="drugType"><img src="https://img.ddky.com/c/cms/temp/20190425/1556162324278_78_78.jpg"><p>妇科用药</p></div><div class="drugType"><img src="https://img.ddky.com/c/cms/temp/20190425/1556185185194_78_78.jpg"><p>滋补调养</p></div><div class="drugType"><img src="https://img.ddky.com/c/cms/temp/20190425/1556161735470_78_78.jpg"><p>维矿补益</p></div><div class="drugType"><img src="https://img.ddky.com/c/cms/temp/20190425/1556185169764_78_78.jpg"><p>医疗器械</p></div><div class="drugType"><img src="https://img.ddky.com/c/cms/temp/20190425/1556161774005_78_78.jpg"><p>驱蚊避暑</p></div><div class="drugType"><img src="https://img.ddky.com/c/cms/temp/20190425/1556185136942_78_78.jpg"><p>家庭常备</p></div><div class="drugType"><img src="https://img.ddky.com/c/cms/temp/20190425/1556162334694_78_78.jpg"><p>儿童用药</p></div><div class="drugType"><img src="https://img.ddky.com/c/cms/temp/20190425/1556162225910_78_78.jpg"><p>功能保健</p></div><div class="drugType"><img src="https://img.ddky.com/c/cms/temp/20190425/1556162109462_78_78.jpg"><p>眼科用药</p></div><div class="drugType"><img src="https://img.ddky.com/c/cms/temp/20190425/1556162166106_78_78.jpg"><p>耳鼻喉药</p></div><div class="drugType"><img src="https://img.ddky.com/c/cms/temp/20190425/1556161906864_78_78.jpg"><p>养生花茶</p></div><div class="drugType"><img src="https://img.ddky.com/c/cms/temp/20190425/1556185154329_78_78.jpg"><p>三高用药</p></div><div class="drugType"><img src="https://img.ddky.com/c/cms/temp/20190425/1556161947593_78_78.jpg"><p>精品中药</p></div></div>'
+
+
+        var reg = /(["?https://])?([\S]+)?([jpg?"])/;
+
+        var arr = str.match(reg);
+
+        console.log(arr);
+    </script>
+</body>
+</html>

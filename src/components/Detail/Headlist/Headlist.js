@@ -12,7 +12,7 @@ class Headlist extends React.Component{
         xinxi:[
             {imgurl:"https://img.ddky.com/c/wap/images/ddky2/home_icon.png",font:"首页",path:"/"},
             {imgurl:"https://img.ddky.com/c/wap/images/ddky2/home_icon.png",font:"搜索",path:"/"},
-            {imgurl:"https://img.ddky.com/c/wap/images/ddky2/home_icon.png",font:"我的",path:"/"}
+            {imgurl:"https://img.ddky.com/c/wap/images/ddky2/home_icon.png",font:"我的",path:"/my"}
         ]
     }
     componentDidMount(){
@@ -39,8 +39,8 @@ class Headlist extends React.Component{
                             <span>我的</span>
                         </li> */}
                         {
-                            this.state.xinxi.map((item)=>{
-                                return <li>
+                            this.state.xinxi.map((item,idx)=>{
+                                return <li key={idx}>
                                             <Link to={item.path} style={{color:"#fff"}}>
                                                 <img src={`${item.imgurl}`} alt="" />
                                                 <span>{item.font}</span>

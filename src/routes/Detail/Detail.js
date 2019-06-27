@@ -15,6 +15,8 @@ import styles from './Detail.css'
 
 import {connect} from 'dva'
 
+import { Spin } from 'antd';
+
 class Detail extends React.Component{
     state={
         searchid:""
@@ -53,6 +55,13 @@ class Detail extends React.Component{
                 <Footerbox />
                 <Headlist />
             </div>
+            // <div>
+            // {/* {
+            //     if(this.props.example.detail == []){
+            //         return <Spin size="large" />
+            //     }
+            // } */}
+            // </div>
         )
     }
 }

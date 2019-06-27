@@ -6,16 +6,41 @@ import base from '../../../index.css'
 import axios from 'axios'
 
 import {Link} from 'dva/router'
+import { Spin } from 'antd';
+import { Promise } from 'q';
+import { resolve } from '_any-promise@1.3.0@any-promise';
+
 
 class DragItem extends React.Component{
     state={
-        druglist:[]
+        druglist:[],
+        hasMore: true,
+        scrollHeight: 0,
+        loading:false
     }
 
+    // constructor(props){
+    //     super(props);
+    //     this.state = {
+           
+
+        //请求数据
     async renderList(){
-        const listdata = (await axios.get('https://www.easy-mock.com/mock/5d120766806bf865488e49bd/getdetail')).data.data
+        // const listdata = (await axios.get('https://www.easy-mock.com/mock/5d120766806bf865488e49bd/getdetail')).data.data
         this.setState({
-            druglist :　listdata
+            loading:true
+        });
+        const druglist = (await axios.get('https://www.easy-mock.com/mock/5d120766806bf865488e49bd/getdetail')).data.data
+        //拿去数据后等待1秒才加载
+        await new Promise((resolve)=>{
+            setTimeout(()=>{
+                resolve();
+            },500)
+        })
+
+        this.setState({
+            druglist :[...this.state.druglist,...druglist],
+            loading:false
         })
         // console.log(this.state.druglist);
     }
@@ -34,7 +59,7 @@ class DragItem extends React.Component{
 
     render(){
         return(
-            <div className={styles.content}>   
+            <div className={styles.content} ref='header'>   
                 <div className={styles.item_one}> 
                     {
                         this.state.druglist.map((item,idx)=>{
@@ -65,7 +90,11 @@ class DragItem extends React.Component{
                                 </Link>
                         })
                     }
-                </div>    
+                </div>
+                <div className={styles.load} onClick={this.renderList.bind(this)}>点击加载更多</div>    
+                <div className={styles.example} style={{display:(this.state.loading)? 'block':'none'}}>
+                    <Spin size="large" />
+                </div>
             </div>
         )
     }

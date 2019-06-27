@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+}
+body, html {
+  
+  background-color: #eee;
+  font-size: 50px;
+  
+}
+.footer {
+      width: 7.5rem;
+      position: fixed;
+      left: 0;
+      bottom: 0px;
+      background-color: #fff;
+      border-top: 1px solid #d9d9d9;
+      border-bottom: 1px solid #d9d9d9;
+  }
+
+  .footBtn_w4>div {
+      width: 25%;
+  }
+  .footer>div {
+      width: 25%;
+      float: left;
+      text-align: center;
+      position: relative;
+  }
+  .footer img {
+      height: 1rem;
+      vertical-align: top;
+  }
+  .cl, .cl:after {
+      content: "\20";
+      display: block;
+      clear: both;
+  }
+.cartNum {
+      width: .36rem;
+      height: .36rem;
+      line-height: .36rem;
+      background-color: #C33;
+      border-radius: 50%;
+      color: #FFF;
+      position: absolute;
+      left: 60%;
+      top: .01rem;
+      font-size: .2rem;
+  }
