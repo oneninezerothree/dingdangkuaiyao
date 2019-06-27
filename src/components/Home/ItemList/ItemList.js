@@ -5,7 +5,19 @@ import styles from '../../../routes/Home/Home.css'
 
 import base from '../../../index.css'
 
+import axios from 'axios'
+
 class ItemList extends React.Component{
+    state={
+        itemlist:[]
+    }
+    async renderlist(){
+        const data = (await axios.get("https://www.easy-mock.com/mock/5d120766806bf865488e49bd/getdetail"))
+    }
+
+    componentDidMount(){
+
+    }
     render(){
         return(
             <div className={styles.specialbox}>

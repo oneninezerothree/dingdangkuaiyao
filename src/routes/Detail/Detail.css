@@ -1078,13 +1078,13 @@ body {
     border: none
 }
 
-.headList li>img {
+.headList li img {
     vertical-align: middle;
     margin: 0 .1rem;
     height: .32rem
 }
 
-.headList li>span {
+.headList li span {
     vertical-align: top;
     height: .88rem;
     font-size: .26rem

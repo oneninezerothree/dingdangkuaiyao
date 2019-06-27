@@ -13,7 +13,7 @@ class DragItem extends React.Component{
     }
 
     async renderList(){
-        const listdata = (await axios.get('https://www.easy-mock.com/mock/5d120766806bf865488e49bd/list')).data.data
+        const listdata = (await axios.get('https://www.easy-mock.com/mock/5d120766806bf865488e49bd/getdetail')).data.data
         this.setState({
             druglist :　listdata
         })
