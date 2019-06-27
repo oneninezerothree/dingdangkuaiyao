@@ -3,7 +3,7 @@ import React from 'react'
 
 
 
-import styles from '../../../routes/List/index.css'
+import styles from '../../../routes/List/List.css'
 // import base from '../../../index.css'
 
 class NavList extends React.Component{

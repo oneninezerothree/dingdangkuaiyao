@@ -2,9 +2,9 @@ import React from 'react';
 import { Router, Route, Switch } from 'dva/router';
 // import IndexPage from './routes/IndexPage';
 
-import Home from './routes/Home';
-import List from './routes/List';
-import Detail from './routes/Detail';
+import Home from './routes/Home/Home';
+import List from './routes/List/List';
+import Detail from './routes/Detail/Detail';
 
 function RouterConfig({ history }) {
   return (

@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-import styles from '../../../routes/Detail/index.css'
+import styles from '../../../routes/Detail/Detail.css'
 
 import base from '../../../index.css'
 

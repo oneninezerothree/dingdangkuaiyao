@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../../../routes/Home/index.css'
+import styles from '../../../routes/Home/Home.css'
 
 import { Link } from 'dva/router';
 

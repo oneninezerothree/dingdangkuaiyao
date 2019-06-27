@@ -1,6 +1,6 @@
 import React from 'react'
 
-import styles from '../../../routes/List/index.css'
+import styles from '../../../routes/List/List.css'
 import base from '../../../index.css'
 
 import {Link} from 'dva/router'

@@ -2,7 +2,7 @@ import React from 'react'
 
 import { Carousel } from 'antd';
 
-import styles from '../../../routes/Detail/index.css'
+import styles from '../../../routes/Detail/Detail.css'
 import axios from 'axios'
 
 class Slider extends React.Component{

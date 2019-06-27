@@ -1,14 +1,14 @@
 import React from 'react'
 
-import Header from '../../components/Home/Header'
-import Banner from '../../components/Home/Banner'
-import PriceBox from '../../components/Home/PriceBox'
-import AdviceBox from '../../components/Home/AdviceBox'
-import Dijia from '../../components/Home/Dijia'
-import DragList from '../../components/Home/DragList'
-import ItemList from '../../components/Home/ItemList'
+import Header from '../../components/Home/Header/Header'
+import Banner from '../../components/Home/Banner/Banner'
+import PriceBox from '../../components/Home/PriceBox/PriceBox'
+import AdviceBox from '../../components/Home/AdviceBox/AdviceBox'
+import Dijia from '../../components/Home/Dijia/Dijia'
+import DragList from '../../components/Home/DragList/DragList'
+import ItemList from '../../components/Home/ItemList/ItemList'
 
-import styles from './index.css'
+import styles from './Home.css'
 import base from '../../index.css'
 
 class Home extends React.Component{

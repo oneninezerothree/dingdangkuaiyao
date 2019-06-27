@@ -1,16 +1,16 @@
 import React from 'react'
 
-import Topbox from '../../components/Detail/Topbox'
-import Footerbox from '../../components/Detail/Footerbox'
+import Topbox from '../../components/Detail/Topbox/Topbox'
+import Footerbox from '../../components/Detail/Footerbox/Footerbox'
 
-import Slider from '../../components/Detail/Slider'
-import Biaoti from '../../components/Detail/Biaoti'
+import Slider from '../../components/Detail/Slider/Slider'
+import Biaoti from '../../components/Detail/Biaoti/Biaoti'
 
-import Xinxi from '../../components/Detail/Xinxi'
+import Xinxi from '../../components/Detail/Xinxi/Xinxi'
 
 import axios from 'axios'
 
-import styles from './index.css'
+import styles from './Detail.css'
 
 class Detail extends React.Component{
     state={

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Carousel } from 'antd';
 
-import styles from '../../../routes/Home/index.css'
+import styles from '../../../routes/Home/Home.css'
 
 
 class Banner extends React.Component{
