@@ -7,7 +7,7 @@ import base from '../../../index.css'
 class Xiangqing extends React.Component{
     render(){
         return(
-            <div id={styles.aboutInfo} class={`${styles.aboutInfo} ${base.none}`} style={this.props.example.toggletab === "xiangqing" ? {display:"block"} : {display:"none"}}>
+            <div id={styles.aboutInfo} className={`${styles.aboutInfo} ${base.none}`} style={this.props.example.toggletab === "xiangqing" ? {display:"block"} : {display:"none"}}>
             <div  className={styles.Instructions}>
                 <p>说明书</p> 
                 <div className={styles.nav}>
