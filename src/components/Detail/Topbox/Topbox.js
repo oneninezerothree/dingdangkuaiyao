@@ -14,16 +14,23 @@ class Topbox extends React.Component{
           });
     }
 
+    toggletab(type){
+        this.props.dispatch({
+            type: 'example/toggletab',  //这里的example是model的命名空间，"/"后面的表示model中effect的异步方法名
+            toggletab:type                  //这个表
+        });
+    }
+
     render(){
         return(
             <div className={styles.topbox}>
                 <div className={`${styles.header} ${base.cl}`}>
-                    <div className={`${styles.headListBox} ${base.fr}`} onClick={this.showlist.bind(this)}>
-                        <img src="https://img.ddky.com/c/wap/images/ddky2/classify_icon.png" alt="" className={base.fr} />
+                    <div className={`${styles.headListBox} ${base.fr}`} onClick={this.showlist.bind(this)} >
+                        <img src="https://img.ddky.com/c/wap/images/ddky2/classify_icon.png" alt=""  className={base.fr}/>
                     </div> 
-                    <span className={styles.active}>商品</span>
-                    <span className="">详情</span>
-                    <span className="">评价</span>
+                    <span className={this.props.example.toggletab === "shangpin" ? `${styles.active}` : ""} onClick={this.toggletab.bind(this,"shangpin")}>商品</span>
+                    <span className={this.props.example.toggletab === "xiangqing" ? `${styles.active}` : ""} onClick={this.toggletab.bind(this,"xiangqing")}>详情</span>
+                    {/* <span className="">{this.props.example.toggletab}</span> */}
                 </div>
             </div>
         )

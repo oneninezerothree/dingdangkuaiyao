@@ -5,6 +5,7 @@ import Footerbox from '../../components/Detail/Footerbox/Footerbox'
 
 import Slider from '../../components/Detail/Slider/Slider'
 import Headlist from '../../components/Detail/Headlist/Headlist'
+import Xiangqing from '../../components/Detail/Xiangqing/Xiangqing'
 // import Biaoti from '../../components/Detail/Biaoti/Biaoti'
 
 // import Xinxi from '../../components/Detail/Xinxi/Xinxi'
@@ -15,7 +16,7 @@ import styles from './Detail.css'
 
 import {connect} from 'dva'
 
-import { Spin } from 'antd';
+// import { Spin } from 'antd';
 
 class Detail extends React.Component{
     state={
@@ -47,11 +48,13 @@ class Detail extends React.Component{
         return(
             <div className={styles.detailbox}>
                 <Topbox />
-                <div className={styles.concent}>
-                    <div className={styles.aboutDetails}>
+                <div className={styles.concent} >
+                    <div style={this.props.example.toggletab === "shangpin" ? {display:"block"} : {display:"none"}}>
                         <Slider searchid={this.state.searchid}/>
                     </div>
+                    <Xiangqing  />
                 </div>
+                
                 <Footerbox />
                 <Headlist />
             </div>

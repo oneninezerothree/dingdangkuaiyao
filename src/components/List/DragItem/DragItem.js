@@ -8,7 +8,7 @@ import axios from 'axios'
 import {Link} from 'dva/router'
 import { Spin } from 'antd';
 import { Promise } from 'q';
-import { resolve } from '_any-promise@1.3.0@any-promise';
+// import { resolve } from '_any-promise@1.3.0@any-promise';
 
 
 class DragItem extends React.Component{
