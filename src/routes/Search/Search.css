@@ -1,0 +1,93 @@
+html,body{
+      background: white;
+}
+.header {
+      height: 1rem;
+      padding: .23rem .22rem 0;
+      border-bottom: 1px solid #DDD;
+      position: absolute;
+      left: 50%;
+      top: 0;
+      transform: translateX(-3.75rem);
+      -webkit-transform: translateX(-3.75rem);
+      background-color: #f9f9f9;
+  }
+  .cl, .cl:after {
+      content: "\20";
+      display: block;
+      clear: both;
+  }
+  #app, .header {
+      width: 7.5rem;
+  }
+  .headerLeft {
+      width: 6.2rem;
+      height: .56rem;
+      background-color: #ebebeb;
+      border-radius: .28rem;
+      padding-left: .2rem;
+  }
+  .headerLeft, .searchTxt, .toSearch {
+      line-height: .56rem;
+  }
+  .fl {
+      float: left!important;
+  }
+  .toSearch {
+      font-size: .32rem;
+  }
+  .fr {
+      float: right!important;
+  }
+  .headerLeft>img {
+      height: .32rem;
+      vertical-align: middle;
+      margin-right: .1rem;
+  }
+  .searchTxt {
+      height: .56rem;
+      width: 5.4rem;
+      border: none;
+      vertical-align: middle;
+      background-color: transparent;
+      font-size: .26rem;
+  }
+  .hotSearchBox {
+      margin-top: .2rem;
+      margin-bottom: .2rem;
+  }
+
+  .hotSearchBox {
+      padding: 0 .2rem;
+  }
+  .commonBox>p, .historyBox>p, .hotSearchBox>p {
+      font-size: .28rem;
+      line-height: .8rem;
+  }
+  .historyBox li, .hotSearchBox li {
+      height: .52rem;
+      line-height: .5rem;
+      padding: 0 .24rem;
+      border: 1px solid #DDD;
+      margin-right: .16rem;
+      margin-bottom: .2rem;
+      float: left;
+      border-radius: .1rem;
+      font-size: .24rem;
+  }
+  .common_search li {
+      float: left;
+      width: 25%;
+      font-size: .28rem;
+      line-height: .46rem;
+      margin-bottom: .4rem;
+  }
+  .common_search img {
+      height: .8rem;
+      vertical-align: top;
+      margin-bottom: .1rem;
+  }
+  .common_search li, .footerbtn {
+      float: left;
+      text-align: center;
+  }

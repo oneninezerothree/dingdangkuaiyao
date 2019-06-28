@@ -1,12 +1,15 @@
-import React from 'react'
+import React,{Component}from 'react'
 
 import styles from '../../../routes/Home/Home.css';
 
-import base from '../../../index.css'
+import base from '../../../index.css';
+import {Link} from 'dva/router';
+
+
 
 // import { Icon } from 'antd';
 
-class Header extends React.Component{
+export default class Header extends Component{
     render(){
         return(
             // eslint-disable-next-line react/jsx-no-duplicate-props
@@ -17,12 +20,13 @@ class Header extends React.Component{
                     <img src="https://img.ddky.com/c/wap/images/ddky2/down_arrow.png" className={styles.down_arrow} alt=""/>
                 </div>
                 <div className={`${styles.searchBox} ${base.fr}`}>
-                    <input type="text" placeholder="搜索药品、症状、品牌" /> 
-                    <img src="https://img.ddky.com/c/wap/images/ddky2/big_glass.png" alt=""/>
+                    <Link to='/search'>
+                        <input type="text" placeholder="搜索药品、症状、品牌" /> 
+                        <img src="https://img.ddky.com/c/wap/images/ddky2/big_glass.png" alt=""/>
+                    </Link>
                 </div>
             </div>
         )
     }
 }
 
-export default Header;

@@ -7,7 +7,7 @@ import styles from './List.css'
 
 import SearchNav from  '../../components/List/SearchNav/SearchNav'
 import HeadList from '../../components/List/HeadList/HeadList'
-import NavList from '../../components/List/NavList/NavList'
+// import NavList from '../../components/List/NavList/NavList'
 import DragItem from '../../components/List/DragItem/DragItem'
 
 class List extends React.Component{
@@ -22,7 +22,7 @@ class List extends React.Component{
                <SearchNav />
                <div id={styles.box}>
                     <HeadList />
-                    <NavList />
+                    {/* <NavLisst /> */}
                     <DragItem />
                </div>
             </div>

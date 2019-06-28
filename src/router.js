@@ -6,8 +6,11 @@ import Home from './routes/Home/Home';
 import My from './routes/My/My';
 import List from './routes/List/List';
 import Detail from './routes/Detail/Detail';
-// import Reg from './routes/Register/Reg'
-// import Login from './routes/Login/Login'
+import Search from './routes/Search/Search';
+import Reg from './routes/Register/Reg';
+import Login from './routes/Login/Login';
+
+
 
 function RouterConfig({ history }) {
   return (
@@ -17,8 +20,12 @@ function RouterConfig({ history }) {
         <Route path="/my" exact component={My} />
         <Route path="/list"  component={List} />
         <Route path="/detail"  component={Detail} />
-        {/* <Route path="/Reg"  component={Reg} />
-        <Route path="/Login"  component={Login} /> */}
+        <Route path="/search"  component={Search} />
+        <Route path="/Reg"  component={Reg} />
+        <Route path="/Login"  component={Login} />
+
+
+
       </Switch>
       
     </Router>
