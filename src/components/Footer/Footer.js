@@ -25,28 +25,28 @@ export default class Footer extends Component {
                         bool.img1 = true;
                         bool.img2 = false;
                         bool.img3 = false;
-                    }} src={bool.img1 ? imgUrl.ind : "https://img.ddky.com/c/cms/temp/20181117/1542445956477_104_104.jpg"}/></Link>
+                    }} src={bool.img1 ? imgUrl.ind : "https://img.ddky.com/c/cms/temp/20181117/1542445956477_104_104.jpg"} alt=""/></Link>
                 </div>
                 <div className={`${styles.footerbtn} ${styles.shoppingMall}`}>
                     <Link to="/"><img onClick={()=>{
                         bool.img2 = true;
                         bool.img1 = false;
                         bool.img3 = false ;           
-                    }} src={ bool.img2 ? imgUrl.sc : "https://img.ddky.com/c/cms/temp/20181117/1542445964888_104_104.jpg"}/></Link>
+                    }} src={ bool.img2 ? imgUrl.sc : "https://img.ddky.com/c/cms/temp/20181117/1542445964888_104_104.jpg"} alt=""/></Link>
                 </div>
                 <div className={`${styles.footerbtn} ${styles.whiteCart}`}>
                     <Link to='/'><img onClick={()=>{
                         bool.img3 = true;
                         bool.img1 = false
                         bool.img2 = false
-                    }} src={ bool.img3 ? imgUrl.car : "https://img.ddky.com/c/cms/temp/20181117/1542445971938_104_104.jpg"}/></Link>
+                    }} src={ bool.img3 ? imgUrl.car : "https://img.ddky.com/c/cms/temp/20181117/1542445971938_104_104.jpg"} alt=""/></Link>
                     <span className={styles.cartNum} style={style}></span>
                 </div>
                 <div className={`${styles.footerbtn} ${styles.mine}`}>
                     <Link to='/my'><img onClick={()=>{
                         bool.img2 = false
                         bool.img3 = false
-                    }} src="https://img.ddky.com/c/cms/temp/20181117/1542445977803_104_104.jpg"/></Link>
+                    }} src="https://img.ddky.com/c/cms/temp/20181117/1542445977803_104_104.jpg" alt=""/></Link>
                 </div>
             </div>
         )

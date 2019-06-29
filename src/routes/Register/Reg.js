@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import styles from './Reg.css';
-import axios from 'axios';
+// import axios from 'axios';
 
 export default class Reg extends Component {
       state= {

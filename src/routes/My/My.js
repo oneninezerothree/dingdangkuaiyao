@@ -18,7 +18,7 @@ export default class HomePage extends Component {
         var arr = str.split('; ');//以分号和空格隔开  [name=malin,psw=123456]
         for(var ele of arr){
               var arr2 = ele.split('=');
-              if(key == arr2[0]){
+              if(key === arr2[0]){
                     return arr2[1];
               }
         }
@@ -49,11 +49,11 @@ export default class HomePage extends Component {
                     <div className={`${styles.myhead} ${styles.cl}`}>
                         <img
                             className={styles.headbg}
-                            src="//img.ddky.com/c/wap/images/ddky3.1/personal_bg.png?ddkycache=6c353d4e65ab0794b5c0d1511c4663e7"/>
+                            src="//img.ddky.com/c/wap/images/ddky3.1/personal_bg.png?ddkycache=6c353d4e65ab0794b5c0d1511c4663e7" alt=""/>
                         <div className={styles.headcont}>
                             <div className={`${styles.userIconBox} ${styles.fl}`}>
                                 <img
-                                    src={(!this.state.isshow)?'http://img.ddky.com/c/user/photo/zu-8@2x.png':'//img.ddky.com/c/wap/images/ddky3.1/personal_ren.png?ddkycache=9c4c02ca63e20bbb2ee58955fe5cd851'}/>
+                                    src={(!this.state.isshow)?'http://img.ddky.com/c/user/photo/zu-8@2x.png':'//img.ddky.com/c/wap/images/ddky3.1/personal_ren.png?ddkycache=9c4c02ca63e20bbb2ee58955fe5cd851'} alt="" />
                             </div>
                             <div className={`${styles.userIconBox} ${styles.fl}`}>
                                 <p className={styles.usertel} ref='tels' style={{display:(!this.state.isshow)? 'block':'none'}}></p>
@@ -84,14 +84,14 @@ export default class HomePage extends Component {
                             }}>
                                 <img
                                     className={styles.member_icon}
-                                    src="//img.ddky.com/c/wap/images/ddky3.1/personal_centericon.png?ddkycache=4864c29f5588bfb14a4d3e4b9fb21e95"/>
+                                    src="//img.ddky.com/c/wap/images/ddky3.1/personal_centericon.png?ddkycache=4864c29f5588bfb14a4d3e4b9fb21e95" alt=""/>
                                 <div className={styles.memberInfo}>
                                     <p className={styles.member_rank}></p>
                                     <span className={styles.member_Money}></span>
                                 </div>
                                 <img
                                     className={styles.member_next}
-                                    src="//img.ddky.com/c/wap/images/ddky3.1/iconwhite_left.png?ddkycache=9a44d4894196426b4d177bc0653e888d"/>
+                                    src="//img.ddky.com/c/wap/images/ddky3.1/iconwhite_left.png?ddkycache=9a44d4894196426b4d177bc0653e888d" alt=""/>
                             </div>
                         </div>
                     </div>
@@ -172,7 +172,7 @@ export default class HomePage extends Component {
                         </li>
                     </ul>
                     <h1 className={styles.telebtn}>
-                        <a href="javascript:">客服电话：95028</a>
+                        <a href="javascript:;">客服电话：95028</a>
                     </h1>
                 </div>
                 <footer className={styles.myfooter}>
